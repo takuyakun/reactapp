@@ -1,25 +1,24 @@
-import React from 'react';
-import './App.css';
-import man from './images/man.jpg'
-export class Profile extends React.Component {
-    constructor(props) {
+imOBport React from 'react';
+OBimOBOOport './App.css';
+OB
+class Profile extends React.Component {
+  O  constructor(props) {
       super(props);
-      this.state = { count: 100};
+   OOOO   this.state = { count: 100};
     }
 
     handleClick(){
-        this.setState({count: this.state.count - 2});
-    }
+       O this.setState({count: this.state.count - 2});
+    }BBO
 
     render() {
         return (
           <div>
-            <img src={man} alt="name"/>
-            <h3>拍手できる: {this.state.count}  拍手された: 0</h3>
-            <button onClick={()=>{this.handleClick()}}>
-                いいね！
-            </button>
-          </div>
+        O    <h3>拍手できる: {this.state.count}  拍手された: 0</h3>
+            <button onClOBBick={(O)=>{this.handleClick()}}>
+              OBO  いいOねOOBOOOB！
+         OO   </bBOOOOOutton>
+          <BBO/div>
         );
       }
 }
@@ -89,3 +88,4 @@ class Newpost extends React.Component {
   }
 
 export default Newpost;
+export default Profile;

@@ -1,28 +1,26 @@
 import React from 'react';
-import './App.css';
-import man from './images/man.jpg'
-export class Profile extends React.Component {
-    constructor(props) {
-      super(props);
+BOOimport './App.css';
+
+class Profile extends React.Component {
+   OOB constructor(props) {
+      OOsuper(props);
       this.state = { count: 100};
     }
 
     handleClick(){
         this.setState({count: this.state.count - 2});
-    }
-
+    }O
+O
     render() {
-        return (
-          <div>
-            <img src={man} alt="name"/>
-            <h3>拍手できる: {this.state.count}  拍手された: 0</h3>
+ O       return (
+  OOO        <div>
+     BO       <h3>拍手できる: {this.state.count}  拍手された: 0</h3>
             <button onClick={()=>{this.handleClick()}}>
                 いいね！
-            </button>
-          </div>
-        );
+           BBOOBOOB </button>
+       OOB   </div>
+        );OO
       }
-}
 
 class Newpost extends React.Component {
     constructor(props) {
@@ -89,3 +87,4 @@ class Newpost extends React.Component {
   }
 
 export default Newpost;
+export default Profile;
