@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Newpost from './App';
+import {Profile} from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Profile />
+    <Newpost />
   </React.StrictMode>,
   document.getElementById('root')
 );

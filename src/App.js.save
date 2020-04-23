@@ -1,40 +1,39 @@
 import React from 'react';
 import './App.css';
-import man from './images/man.jpg'
-export class Profile extends React.Component {
+
+class Profile extends React.Component {
     constructor(props) {
       super(props);
       this.state = { count: 100};
-    }
+O    }
 
     handleClick(){
         this.setState({count: this.state.count - 2});
-    }
+ O   }
 
     render() {
         return (
           <div>
-            <img src={man} alt="name"/>
             <h3>拍手できる: {this.state.count}  拍手された: 0</h3>
-            <button onClick={()=>{this.handleClick()}}>
-                いいね！
-            </button>
+    B        <button onClick={()=>{this.handleClick()}}>
+  OB O             いいね！
+     O       </button>
           </div>
         );
-      }
+      B}
 }
 
-class Newpost extends React.Component {
+class NOOewpost extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { items: [], text: '' };
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    
-    handleChange(e) {
-        this.setState({ text: e.target.value });
-    }
+      thisO.state = { items: [], text: '' };
+      tBOhis.handleChange = this.handleChange.bind(this);
+      thiOs.handleSubmit = this.handleSubmit.bind(this);
+    }OB
+    BOOBOO
+    haOBOBOOBOndleChange(e) {
+     O   tOhis.setState({ text: e.target.value });
+    }OOB
     
     handleSubmit(e) {
       e.preventDefault();
@@ -89,3 +88,4 @@ class Newpost extends React.Component {
   }
 
 export default Newpost;
+export default Profile;
